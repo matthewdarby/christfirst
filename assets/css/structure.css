@@ -1,0 +1,195 @@
+/*
+	Name: 			Christ First Christian Fellowship Center
+	Developer: 		Matthew Darby
+	Date: 			5/10/2008
+	Description: 	CSS for the overal layout of the site
+	Subversion Last Update: $LastChangedDate: 2008-04-24 20:00:01 -0400 (Thu, 24 Apr 2008) $
+*/
+
+body {
+	color: #000;
+	font-family: Verdana, Helvetica, Sans-Serif; 
+ 	font-size:75%;
+	margin:0pt;
+	padding:0pt; 
+}
+
+* html body {
+	background: #863635;
+}
+
+
+#wrapper, #wrapper-top { 
+	position: relative;
+	display: block;
+	background: #863635 url(/assets/images/bg-bar.gif) repeat-x;
+}
+
+.wrapper-inner {
+	position: relative;
+	width: 812px;
+	display: block;
+	margin: 0pt auto;	
+}
+
+#wrapper-top .wrapper-inner {
+	padding-top: 25px; 
+}
+
+/****************************************************
+* &Header
+****************************************************/
+#header {
+	position: relative;
+	background: #FFFBF2 url(/assets/images/content-bg.png) repeat-y;
+	padding: 10px 15px;
+	zoom: 1;/* fixes IE peek-a-boo bug */
+}
+
+img { behavior: url(/assets/js/pngbehavior.htc); }
+
+#header p { margin: 0; }
+
+#header p img {
+	float: left;
+}
+
+#mission {
+	background: #6E829A;
+	color: #FFF;
+	font-size: 1.4em;
+	height: 182px;
+	width: 599px;
+	float: right;
+}
+
+#mission span {
+	background: url(/assets/images/banner.jpg) no-repeat;
+	position: absolute; 
+	display: block;
+	width: 599px;
+	height: 182px;
+}
+
+/****************************************************
+* &Primary Navigation
+****************************************************/
+#primary-navigation {
+	position: relative;
+	text-align: center;
+}
+
+
+/****************************************************
+* &Sidebar
+****************************************************/
+#sidebar {
+	position: relattive;
+	padding: 0 10px;
+	margin: 20px 0 0 0;
+	width: 25%;
+	float: right;
+	border-left: 1px solid #999999;
+	font-size: .95em;
+}
+
+#sidebar .pod {
+	background: #FFE3A3 url(/assets/images/sidebar-bg.gif) repeat-y;
+	border: 1px solid #FFE097;
+	padding:5px; 
+	margin: 10px 0;
+}
+
+
+/****************************************************
+* &Secondary Navigation
+****************************************************/
+#secondary-nav {
+	width: 100%;
+	margin: 10px 0;
+	}
+
+#secondary-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}	
+
+#secondary-nav li {padding: 0;}
+
+#secondary-nav li a {
+	height: 32px;
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 24px;
+	text-decoration: none;
+	}	
+	
+#secondary-nav li a:link, #secondary-nav li a:visited {
+	color: #FFF;
+	display: block;
+	background:  url(/assets/images/menu5.gif);
+	padding: 8px 0 0 10px;
+	}
+	
+#secondary-nav li a:hover {
+	color: #FFF;
+	background:  url(/assets/images/menu5.gif) 0 -32px;
+	padding: 8px 0 0 10px;
+	}
+
+/****************************************************
+* &Content Container
+****************************************************/
+#content-container {
+	position: relative;
+	background: #FFFBF2 url(/assets/images/content-bg.png) repeat-y;
+	padding: 10px;
+	zoom: 1; /* fixes IE bug */
+}
+
+#content {
+	padding: 0 10px;
+	width: 64%;
+	float: left;
+}
+
+#content-base {
+	position: relative;
+	background: url(/assets/images/base.png) no-repeat top center;	
+	padding-top: 83px;
+	clear: both;
+}
+
+/****************************************************
+* &Footer
+****************************************************/
+#wrapper-bottom {
+	background: #EBAC60 url(/assets/images/footer-bg.png) repeat-x;
+	display:block;	
+	position: relative;
+}
+
+#footer {
+	position: relative;
+	padding: 10px 0 20px 0;
+	font-size: .89em;
+	width: 812px;
+}
+
+/****************************************************
+* &Misc
+****************************************************/
+#skip-navigation {
+	position: absolute;
+	z-index: -1;
+	color: #863635; 
+	font-size: 1%;
+}
+
+.clearfix {
+	clear: both;
+	padding-bottom: 1px;	/* for Gecko-based browsers */
+	margin-bottom: -1px;	/* for Gecko-based browsers */
+}
+	

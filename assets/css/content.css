@@ -1,0 +1,142 @@
+/**************************************************
+* &Anchors
+***************************************************/
+a {
+	color: #364986;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #863635;
+	text-decoration: none;
+}
+
+#primary-navigation a {text-decoration: none;}
+
+/**************************************************
+* &Headers
+***************************************************/
+
+h1 {
+	font-size: 1.8em; 
+	margin: 5px 0;
+	color: #863635;
+}
+
+h2 {
+	font-size: 1.55em;
+	margin: 5px 0 8px 0;
+}
+
+h3 {
+	font-size: 1.4em;
+	margin: 5px 0;
+	color: #6B6F55;
+}
+
+h4 {
+	font-size: 1.2em;
+	margin: 5px 0;
+	font-weight: bold;
+}
+/**************************************************
+* &Images
+***************************************************/
+
+img {border: 0;}
+
+img.photo {
+	background-color: #fff;
+	border: 1px solid #B6B295;
+	padding: 3px;
+}
+
+img.right {
+	margin-left: 7px;
+	margin-bottom: 7px;
+	float: right;
+}
+
+img.left {
+	margin-right: 7px;
+	margin-bottom: 7px;
+	float: left;
+}
+
+/**************************************************
+* &Lists
+***************************************************/
+li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+ul.horizontal-pipe-list , #content ul.horizontal-pipe-list   {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.horizontal-pipe-list li, #content .horizontal-pipe-list li {
+	float: left;
+	padding: 0px 5px;
+	border-left: 1px solid #000;
+	vertical-align: middle;
+	list-style: none;
+}
+
+.horizontal-pipe-list li.first, #content .horizontal-pipe-list li.first {
+	border-left: none; 
+	padding-left: 0;
+}
+
+
+/**************************************************
+* &Blockquoate
+***************************************************/
+blockquote p
+    {
+    padding: 0px 15px 0px 0px;
+    font-size: 1em;    
+    float: left;
+    background: url(/assets/images/quote_down.png) bottom right no-repeat;
+}
+
+blockquote
+    {
+    padding: 20px 20px 0 20px;
+    margin: 5px 5px 0 15px;
+    font-size: 1em;    
+    background: url(/assets/images/quote_up.png) top left no-repeat;
+}
+
+cite
+    {
+    margin: 0 5px 20px 0;
+    padding-right: 20px;
+    font-size: 1em;
+    text-align:right; 
+    display: block;   
+}
+
+/**************************************************
+* &Misc
+***************************************************/
+.floatright { float: right; }
+
+.floatleft { float: left; }
+
+.inside { padding: 10px; }
+
+.right( text-align: right; )
+
+.left {text-align: left; }
+
+.center {text-align: center; }
+
+.alt {
+	border-top: 1px solid #7D5B38;
+	border-bottom: 1px solid #7D5B38;
+	background: #FFEDDC;
+	width: 100%;
+}

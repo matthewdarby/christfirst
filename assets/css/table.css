@@ -1,0 +1,46 @@
+/*------------------------------------------------
+  Christian Education Outreach USA Content
+  Author: Matthew Darby
+  File: table.css
+  Date Created: Mar 1, 2008
+  Date Last Update: $LastChangedDate: 2008-03-01 10:14:22 -0500 (Sat, 01 Mar 2008) $
+  Revision: $LastChangedRevision: 259 $
+--------------------------------------------------*/
+
+table {
+	margin: .75em 0;
+	border-collapse:collapse;
+	border: 1px solid #B67A2F;
+}
+
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+table a {
+	color: #614119;
+}
+
+th, thead tr{
+	background: #DBAD75;
+	color: #614119;
+}
+
+tfoot tr, tfoot td, tfoot th {
+	background: #FEFDFB;
+}
+
+th, td {
+	border: 1px solid #B67A2F;
+	padding: .5em .5em;
+}
+
+tr {
+	background: #E9CDAA;
+}
+
+tr.row1 {
+	background: #F3E5D2;
+}
+

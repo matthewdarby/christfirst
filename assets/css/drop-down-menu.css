@@ -1,0 +1,102 @@
+/* CSS Document */
+#primary-navigation, #primary-navigation ul {
+	list-style:none;
+	margin: 1em 0;
+	padding: 0;
+	text-align: center;
+	zoom: 1;/* fixes IE peek-a-boo bug */
+}
+#primary-navigation li {
+	float:left;
+	position:relative;
+	line-height:2em;
+	width:10em;
+	margin: 0 .5em;
+	text-decoration:none;
+	color:#FFF;
+	display:inline;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+* html  #primary-navigation li {
+	position:static;
+}
+
+#primary-navigation li ul {
+	position:absolute;
+	margin-top:-1em;
+	margin-left:.5em; /* for IE */
+	display:none;
+}
+#primary-navigation ul li ul {
+	border-right:1px solid #75302F;
+	background:#70819A;
+	color:#75302F;
+	margin-top:0em;
+	margin-left:2em;
+}
+
+* html #primary-navigation ul li ul {
+	margin-top:0em;
+	margin-left:1em;
+}
+
+/* ******************************************************************* */
+/* SHOW SUBprimary-navigation  1 */
+#primary-navigation li:hover ul, #primary-navigation li.over ul {
+	display:block;
+}
+#primary-navigation li:hover ul ul, #primary-navigation li.over ul ul {
+	display:none;
+}
+/* SHOW SUBprimary-navigation  2 */
+#primary-navigation ul li:hover ul, #primary-navigation ul li.over ul {
+	display:block;
+}
+/* ******************************************************************* */
+/* STYLING UP THE LINKS */
+#primary-navigation a {
+	display:block;
+	padding:0 10px;
+	color: #FFF;
+}
+
+#primary-navigation ul ul a { color: #622827; }
+
+#primary-navigation a:hover {
+	background-color:#75302F;
+	color:#fff;
+	text-decoration: none;
+}
+#primary-navigation ul ul {
+	border-top:1px solid #622827;
+}
+#primary-navigation ul ul li {
+	border-right:none;
+	border-right:1px solid #622827;
+	border-bottom:1px solid #622827;
+	border-left:1px solid #622827;
+	background:#993F3D;
+	font-size: 0.9em;
+	margin: 0;
+}
+
+/* ******************************************************************* */
+
+#primary-navigation {
+	z-index:1;
+}
+#primary-navigation ul {
+	z-index:2;
+}
+#primary-navigation ul ul {
+	z-index:3;
+}
+
+/* ******************************************************************* */
+
+/* Fix IE. Hide from IE Mac \*/
+* html #primary-navigation ul li { float: left; height: 1%; }
+* html #primary-navigation ul li a { height: 1%; }
+/* End */
